@@ -53,9 +53,18 @@ namespace RESTAPITestDemo.Controllers
         [Route("api/[controller]")]
         public IActionResult InsertEmployee(models.Employee employee)
         {
-            _employee.Insert_Employe(employee);
-            return Created(HttpContext.Request.Scheme+"://"+HttpContext.Request.Host+HttpContext.Request.Path+"/"+employee.Employee_Id, employee);
-            
+            employee= _employee.Insert_Employe(employee);
+            if (employee!=null)
+            {
+                return Created(HttpContext.Request.Scheme + "://" + HttpContext.Request.Host + HttpContext.Request.Path + "/" + employee.Employee_Id, employee);
+
+            }
+            else
+            {
+
+                return NotFound($"Employee is not created");
+            }
+
 
         }
 

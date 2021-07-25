@@ -43,27 +43,24 @@ namespace RESTAPITestDemo.MockEmployeData
         public Employee Insert_Employe(Employee employee)
         {
             employee.Employee_Id = Guid.NewGuid();
-          
-           // using (var ctx = new )
-          //  {
-                _employeeDBContext.Employees.Add(employee);
-                _employeeDBContext.SaveChanges();
-
-
-            // }
+           _employeeDBContext.Employees.Add(employee);
+           _employeeDBContext.SaveChanges();
             return employee;
         }
 
         public Employee Update_Employee(Employee emp)
         {
             var exstingdata = GetEmployeeby_Guid(emp.Employee_Id);
-           
+            if (exstingdata!=null)
+            {
                 exstingdata.Name = emp.Name;
                 exstingdata.Address = emp.Address;
-               _employeeDBContext.Employees.Update(exstingdata);
-               _employeeDBContext.SaveChanges();
-                return exstingdata;
-           
+                _employeeDBContext.Employees.Update(exstingdata);
+                _employeeDBContext.SaveChanges();
+                
+            }
+            return exstingdata;
+
         }
     }
 }
