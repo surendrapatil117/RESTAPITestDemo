@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30413.136
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RESTAPITestDemo", "RESTAPITestDemo.csproj", "{AC908352-BFEE-4E4C-8AB2-27C8BEFCA7F1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AC908352-BFEE-4E4C-8AB2-27C8BEFCA7F1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AC908352-BFEE-4E4C-8AB2-27C8BEFCA7F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AC908352-BFEE-4E4C-8AB2-27C8BEFCA7F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AC908352-BFEE-4E4C-8AB2-27C8BEFCA7F1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6CCC5D27-E077-46E0-99A2-A93C15A1DFA1}
+	EndGlobalSection
+EndGlobal
