@@ -15,6 +15,10 @@ namespace RESTAPITestDemo.MockEmployeData
         {
             _employeeDBContext = employeeDBContext;
         }
+        /// <summary>
+        /// this function will delete the Employee by id
+        /// </summary>
+        /// <param name="employee"></param>
         public void Delete_Employee(Employee employee)
         {
             _employeeDBContext.Employees.Remove(employee);
