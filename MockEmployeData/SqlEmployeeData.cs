@@ -35,7 +35,11 @@ namespace RESTAPITestDemo.MockEmployeData
 
 
         }
-
+        /// <summary>
+        /// this function is usd to insert new Employee 
+        /// </summary>
+        /// <param name="employee"></param>
+        /// <returns></returns>
         public Employee Insert_Employe(Employee employee)
         {
             employee.Employee_Id = Guid.NewGuid();

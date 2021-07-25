@@ -25,7 +25,7 @@ namespace RESTAPITestDemo.Controllers
         {
             return Ok(_employee.GetEmployees());
         }
-//this controller is used to get employee by id
+        //this controller is used to get employee by id
         [HttpGet]
         [Route("api/[controller]/{id}")]
         public IActionResult GetEmployes(Guid id)
@@ -41,7 +41,11 @@ namespace RESTAPITestDemo.Controllers
                 return NotFound($"Employee is not found with Guid {id}");
             }
         }
-
+        /// <summary>
+        /// This function is used to Add new employee
+        /// </summary>
+        /// <param name="employee"></param>
+        /// <returns></returns>
         [HttpPost]
         [Route("api/[controller]")]
         public IActionResult InsertEmployee(models.Employee employee)
