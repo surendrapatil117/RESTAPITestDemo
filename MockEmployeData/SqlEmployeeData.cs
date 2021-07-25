@@ -13,7 +13,6 @@ namespace RESTAPITestDemo.MockEmployeData
 
         public SqlEmployeeData(EmployeeDBContext employeeDBContext)
         {
-            
             _employeeDBContext = employeeDBContext;
         }
         public void Delete_Employee(Employee employee)
