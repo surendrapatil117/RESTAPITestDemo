@@ -53,7 +53,11 @@ namespace RESTAPITestDemo.MockEmployeData
            _employeeDBContext.SaveChanges();
             return employee;
         }
-
+        /// <summary>
+        /// This function is usd to update the employee
+        /// </summary>
+        /// <param name="emp"></param>
+        /// <returns></returns>
         public Employee Update_Employee(Employee emp)
         {
             var exstingdata = GetEmployeeby_Guid(emp.Employee_Id);
