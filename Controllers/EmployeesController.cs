@@ -25,7 +25,7 @@ namespace RESTAPITestDemo.Controllers
         {
             return Ok(_employee.GetEmployees());
         }
-
+//this controller is used to get employee by id
         [HttpGet]
         [Route("api/[controller]/{id}")]
         public IActionResult GetEmployes(Guid id)
