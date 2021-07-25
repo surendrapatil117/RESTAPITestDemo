@@ -31,7 +31,10 @@ namespace RESTAPITestDemo.MockEmployeData
 
             return _employeeDBContext.Employees.Find(guid);
         }
-
+        /// <summary>
+        /// this function will retun all employeee 
+        /// </summary>
+        /// <returns></returns>
         public IEnumerable<Employee> GetEmployees()
         {
             return _employeeDBContext.Employees.ToList();
